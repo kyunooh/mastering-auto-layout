@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A157E5D722CA424000D8BDF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A157E5D622CA424000D8BDF7 /* AppDelegate.swift */; };
+		A157E5D922CA424000D8BDF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A157E5D822CA424000D8BDF7 /* ViewController.swift */; };
+		A157E5DC22CA424000D8BDF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A157E5DA22CA424000D8BDF7 /* Main.storyboard */; };
+		A157E5DE22CA424100D8BDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A157E5DD22CA424100D8BDF7 /* Assets.xcassets */; };
+		A157E5E122CA424100D8BDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A157E5DF22CA424100D8BDF7 /* LaunchScreen.storyboard */; };
+		A157E5EC22CA424100D8BDF7 /* Constraint_InequalitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A157E5EB22CA424100D8BDF7 /* Constraint_InequalitiesTests.swift */; };
+		A157E5F722CA424100D8BDF7 /* Constraint_InequalitiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A157E5F622CA424100D8BDF7 /* Constraint_InequalitiesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A157E5E822CA424100D8BDF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A157E5CB22CA424000D8BDF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A157E5D222CA424000D8BDF7;
+			remoteInfo = "Constraint Inequalities";
+		};
+		A157E5F322CA424100D8BDF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A157E5CB22CA424000D8BDF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A157E5D222CA424000D8BDF7;
+			remoteInfo = "Constraint Inequalities";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A157E5D322CA424000D8BDF7 /* Constraint Inequalities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Constraint Inequalities.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A157E5D622CA424000D8BDF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A157E5D822CA424000D8BDF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A157E5DB22CA424000D8BDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A157E5DD22CA424100D8BDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A157E5E022CA424100D8BDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A157E5E222CA424100D8BDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A157E5E722CA424100D8BDF7 /* Constraint InequalitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Constraint InequalitiesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A157E5EB22CA424100D8BDF7 /* Constraint_InequalitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraint_InequalitiesTests.swift; sourceTree = "<group>"; };
+		A157E5ED22CA424100D8BDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A157E5F222CA424100D8BDF7 /* Constraint InequalitiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Constraint InequalitiesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A157E5F622CA424100D8BDF7 /* Constraint_InequalitiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraint_InequalitiesUITests.swift; sourceTree = "<group>"; };
+		A157E5F822CA424100D8BDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A157E5D022CA424000D8BDF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A157E5E422CA424100D8BDF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A157E5EF22CA424100D8BDF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A157E5CA22CA424000D8BDF7 = {
+			isa = PBXGroup;
+			children = (
+				A157E5D522CA424000D8BDF7 /* Constraint Inequalities */,
+				A157E5EA22CA424100D8BDF7 /* Constraint InequalitiesTests */,
+				A157E5F522CA424100D8BDF7 /* Constraint InequalitiesUITests */,
+				A157E5D422CA424000D8BDF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A157E5D422CA424000D8BDF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A157E5D322CA424000D8BDF7 /* Constraint Inequalities.app */,
+				A157E5E722CA424100D8BDF7 /* Constraint InequalitiesTests.xctest */,
+				A157E5F222CA424100D8BDF7 /* Constraint InequalitiesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A157E5D522CA424000D8BDF7 /* Constraint Inequalities */ = {
+			isa = PBXGroup;
+			children = (
+				A157E5D622CA424000D8BDF7 /* AppDelegate.swift */,
+				A157E5D822CA424000D8BDF7 /* ViewController.swift */,
+				A157E5DA22CA424000D8BDF7 /* Main.storyboard */,
+				A157E5DD22CA424100D8BDF7 /* Assets.xcassets */,
+				A157E5DF22CA424100D8BDF7 /* LaunchScreen.storyboard */,
+				A157E5E222CA424100D8BDF7 /* Info.plist */,
+			);
+			path = "Constraint Inequalities";
+			sourceTree = "<group>";
+		};
+		A157E5EA22CA424100D8BDF7 /* Constraint InequalitiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A157E5EB22CA424100D8BDF7 /* Constraint_InequalitiesTests.swift */,
+				A157E5ED22CA424100D8BDF7 /* Info.plist */,
+			);
+			path = "Constraint InequalitiesTests";
+			sourceTree = "<group>";
+		};
+		A157E5F522CA424100D8BDF7 /* Constraint InequalitiesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A157E5F622CA424100D8BDF7 /* Constraint_InequalitiesUITests.swift */,
+				A157E5F822CA424100D8BDF7 /* Info.plist */,
+			);
+			path = "Constraint InequalitiesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A157E5D222CA424000D8BDF7 /* Constraint Inequalities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A157E5FB22CA424100D8BDF7 /* Build configuration list for PBXNativeTarget "Constraint Inequalities" */;
+			buildPhases = (
+				A157E5CF22CA424000D8BDF7 /* Sources */,
+				A157E5D022CA424000D8BDF7 /* Frameworks */,
+				A157E5D122CA424000D8BDF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Constraint Inequalities";
+			productName = "Constraint Inequalities";
+			productReference = A157E5D322CA424000D8BDF7 /* Constraint Inequalities.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A157E5E622CA424100D8BDF7 /* Constraint InequalitiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A157E5FE22CA424100D8BDF7 /* Build configuration list for PBXNativeTarget "Constraint InequalitiesTests" */;
+			buildPhases = (
+				A157E5E322CA424100D8BDF7 /* Sources */,
+				A157E5E422CA424100D8BDF7 /* Frameworks */,
+				A157E5E522CA424100D8BDF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A157E5E922CA424100D8BDF7 /* PBXTargetDependency */,
+			);
+			name = "Constraint InequalitiesTests";
+			productName = "Constraint InequalitiesTests";
+			productReference = A157E5E722CA424100D8BDF7 /* Constraint InequalitiesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A157E5F122CA424100D8BDF7 /* Constraint InequalitiesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A157E60122CA424100D8BDF7 /* Build configuration list for PBXNativeTarget "Constraint InequalitiesUITests" */;
+			buildPhases = (
+				A157E5EE22CA424100D8BDF7 /* Sources */,
+				A157E5EF22CA424100D8BDF7 /* Frameworks */,
+				A157E5F022CA424100D8BDF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A157E5F422CA424100D8BDF7 /* PBXTargetDependency */,
+			);
+			name = "Constraint InequalitiesUITests";
+			productName = "Constraint InequalitiesUITests";
+			productReference = A157E5F222CA424100D8BDF7 /* Constraint InequalitiesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A157E5CB22CA424000D8BDF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = jellyms;
+				TargetAttributes = {
+					A157E5D222CA424000D8BDF7 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					A157E5E622CA424100D8BDF7 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A157E5D222CA424000D8BDF7;
+					};
+					A157E5F122CA424100D8BDF7 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A157E5D222CA424000D8BDF7;
+					};
+				};
+			};
+			buildConfigurationList = A157E5CE22CA424000D8BDF7 /* Build configuration list for PBXProject "Constraint Inequalities" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A157E5CA22CA424000D8BDF7;
+			productRefGroup = A157E5D422CA424000D8BDF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A157E5D222CA424000D8BDF7 /* Constraint Inequalities */,
+				A157E5E622CA424100D8BDF7 /* Constraint InequalitiesTests */,
+				A157E5F122CA424100D8BDF7 /* Constraint InequalitiesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A157E5D122CA424000D8BDF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A157E5E122CA424100D8BDF7 /* LaunchScreen.storyboard in Resources */,
+				A157E5DE22CA424100D8BDF7 /* Assets.xcassets in Resources */,
+				A157E5DC22CA424000D8BDF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A157E5E522CA424100D8BDF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A157E5F022CA424100D8BDF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A157E5CF22CA424000D8BDF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A157E5D922CA424000D8BDF7 /* ViewController.swift in Sources */,
+				A157E5D722CA424000D8BDF7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A157E5E322CA424100D8BDF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A157E5EC22CA424100D8BDF7 /* Constraint_InequalitiesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A157E5EE22CA424100D8BDF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A157E5F722CA424100D8BDF7 /* Constraint_InequalitiesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A157E5E922CA424100D8BDF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A157E5D222CA424000D8BDF7 /* Constraint Inequalities */;
+			targetProxy = A157E5E822CA424100D8BDF7 /* PBXContainerItemProxy */;
+		};
+		A157E5F422CA424100D8BDF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A157E5D222CA424000D8BDF7 /* Constraint Inequalities */;
+			targetProxy = A157E5F322CA424100D8BDF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A157E5DA22CA424000D8BDF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A157E5DB22CA424000D8BDF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A157E5DF22CA424100D8BDF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A157E5E022CA424100D8BDF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A157E5F922CA424100D8BDF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A157E5FA22CA424100D8BDF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A157E5FC22CA424100D8BDF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Constraint Inequalities/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jellyms.Constraint-Inequalities";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A157E5FD22CA424100D8BDF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Constraint Inequalities/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jellyms.Constraint-Inequalities";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A157E5FF22CA424100D8BDF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Constraint InequalitiesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jellyms.Constraint-InequalitiesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Constraint Inequalities.app/Constraint Inequalities";
+			};
+			name = Debug;
+		};
+		A157E60022CA424100D8BDF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Constraint InequalitiesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jellyms.Constraint-InequalitiesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Constraint Inequalities.app/Constraint Inequalities";
+			};
+			name = Release;
+		};
+		A157E60222CA424100D8BDF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Constraint InequalitiesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jellyms.Constraint-InequalitiesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Constraint Inequalities";
+			};
+			name = Debug;
+		};
+		A157E60322CA424100D8BDF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Constraint InequalitiesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jellyms.Constraint-InequalitiesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Constraint Inequalities";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A157E5CE22CA424000D8BDF7 /* Build configuration list for PBXProject "Constraint Inequalities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A157E5F922CA424100D8BDF7 /* Debug */,
+				A157E5FA22CA424100D8BDF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A157E5FB22CA424100D8BDF7 /* Build configuration list for PBXNativeTarget "Constraint Inequalities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A157E5FC22CA424100D8BDF7 /* Debug */,
+				A157E5FD22CA424100D8BDF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A157E5FE22CA424100D8BDF7 /* Build configuration list for PBXNativeTarget "Constraint InequalitiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A157E5FF22CA424100D8BDF7 /* Debug */,
+				A157E60022CA424100D8BDF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A157E60122CA424100D8BDF7 /* Build configuration list for PBXNativeTarget "Constraint InequalitiesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A157E60222CA424100D8BDF7 /* Debug */,
+				A157E60322CA424100D8BDF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A157E5CB22CA424000D8BDF7 /* Project object */;
+}
