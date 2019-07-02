@@ -28,7 +28,7 @@ final class WeatherViewController: UIViewController {
     
     let images = [#imageLiteral(resourceName: "weather-sun"), #imageLiteral(resourceName: "weather-windy"), #imageLiteral(resourceName: "weather-thunderstorm")]
     
-    let imageView: [UIImageView] = images.map {image in
+    let imageViews: [UIImageView] = images.map {image in
         let imageView = UIImageView(image: image)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
@@ -37,9 +37,40 @@ final class WeatherViewController: UIViewController {
     let spacerGuides = (0..<images.count - 1).map {_ in UILayoutGuide()}
     let containerGuide = UILayoutGuide();
     
-    imageView.forEach(view.addSubview)
+    imageViews.forEach(view.addSubview)
     spacerGuides.forEach(view.addLayoutGuide)
     view.addLayoutGuide(containerGuide)
+    NSLayoutConstraint.activate(
+        [ containerGuide.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+          containerGuide.leadingAnchor.constraint(greaterThanOrEqualTo: view.safeAreaLayoutGuide.leadingAnchor),
+          containerGuide.trailingAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.trailingAnchor),
+          {
+            let constraint = spacerGuides.first!.widthAnchor.constraint(equalToConstant: 80)
+            constraint.priority = UILayoutPriority(749)
+            return constraint
+          }(),
+          spacerGuides.last!.widthAnchor.constraint(equalTo: spacerGuides.first!.widthAnchor)
+        ]
+        + imageViews.enumerated().flatMap { index, imageView in
+            [ imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+                imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor),
+                imageView.leadingAnchor.constraint(
+                    equalTo: imageView == imageViews.first!
+                             ? containerGuide.leadingAnchor
+                             : spacerGuides[index -  1].trailingAnchor
+                ),
+                imageView.trailingAnchor.constraint (
+                    equalTo:
+                        imageView == imageViews.last!
+                        ? containerGuide.trailingAnchor
+                        : spacerGuides[index].leadingAnchor
+                )
+            ]
+        }
+        + imageViews.dropFirst().map {
+            $0.widthAnchor.constraint(equalTo: imageViews.first!.widthAnchor)
+        }
+    )
   }
 }
 
